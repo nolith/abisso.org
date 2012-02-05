@@ -5,6 +5,7 @@ slug: portablenotary
 status: publish
 title: PortableNotary
 wordpress_id: '84'
+group: projects
 ---
 
 PortableNotary permits you to verify pdf signature.

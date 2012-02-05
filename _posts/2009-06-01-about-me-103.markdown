@@ -15,4 +15,4 @@ tags:
 
 [About Me](http://abisso.org/projects/about-meabout-me/) 1.0.3 released.
 
-Added DIsqus support.
+Added Disqus support.

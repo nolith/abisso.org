@@ -5,6 +5,7 @@ slug: projects
 status: publish
 title: Projects
 wordpress_id: '7'
+group: pages
 ---
 {% include JB/setup %}
 

@@ -5,6 +5,7 @@ slug: bundler-with-mercurial-support
 status: publish
 title: Bundler with Mercurial support
 wordpress_id: '237'
+picture: http://gembundler.com/images/bundler-small.png
 categories:
 - english
 - me
@@ -16,7 +17,7 @@ tags:
 - ruby
 ---
 
-![](http://gembundler.com/images/bundler-small.png)Git seems to be the de-facto tool for ruby development. Lots of gems are hosted on github, and bundler may help you to work with cutting-edge release fetched from git repositories.
+Git seems to be the de-facto tool for ruby development. Lots of gems are hosted on github, and bundler may help you to work with cutting-edge release fetched from git repositories.
 
 WOW! That's amazing!_ But what if you didn't like to use git as scm_?
 

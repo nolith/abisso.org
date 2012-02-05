@@ -5,6 +5,7 @@ slug: info
 status: publish
 title: Info
 wordpress_id: '2'
+group: pages
 ---
 {% include JB/setup %}
 

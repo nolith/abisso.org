@@ -1,148 +1,61 @@
 ---
 date: '2009-05-15 18:12:33'
-layout: page
+layout: commentable_page
 slug: about-me
 status: publish
 title: About me
 wordpress_id: '46'
+group: projects
 ---
 
 # About Me Wordpress Plugin
 
 
-
-
-
-
-
-## Networks
-
-
-
-
-
-	
-  * Amazon Wishlist
-
-	
-  * Anobii
-
-	
-  * Bitbucket
-
-	
-  * Blogs
-
-	
-  * BlogMarks
-
-	
-  * Dapx
-
-	
-  * Delicious
-
-	
-  * DeviantART
-
-	
-  * Digg
-
-	
-  * Disqus
-
-	
-  * Ebay
-
-	
-  * Facebook
-
-	
-  * Flickr
-
-	
-  * FriendFeed
-
-	
-  * Github
-
-	
-  * GoodReads
-
-	
-  * Google Profile
-
-	
-  * Google Reader
-
-	
-  * Hellotxt
-
-	
-  * Hyves.nl
-
-	
-  * Identi.ca
-
-	
-  * Jeqq
-
-	
-  * Last FM
-
-	
-  * LibraryThing
-
-	
-  * Linked In
-
-	
-  * My Space
-
-	
-  * Orkut
-
-	
-  * Picasa Web Albums
-
-	
-  * Plurk
-
-	
-  * Pownce
-
-	
-  * Qik
-
-	
-  * Qype
-
-	
-  * RedGage
-
-	
-  * Sixent
-
-	
-  * Songza
-
-	
-  * Stumble Upon
-
-	
-  * Technorati
-
-	
-  * Twitter
-
-	
-  * YouTube
-
-	
-  * Xing
-
-
-
+<div style="float: right; margin-left: 20px;">
+<h2>Networks</h2>
+<ul>
+<li> Amazon Wishlist</li>
+<li>Anobii</li>
+<li> Bitbucket</li>
+<li> Blogs</li>
+<li> BlogMarks</li>
+<li> Dapx</li>
+<li> Delicious</li>
+<li>DeviantART</li>
+<li> Digg</li>
+<li> Disqus</li>
+<li> Ebay</li>
+<li> Facebook</li>
+<li> Flickr</li>
+<li> FriendFeed</li>
+<li> Github</li>
+<li> GoodReads</li>
+<li> Google Profile</li>
+<li> Google Reader</li>
+<li> Hellotxt</li>
+<li> Hyves.nl</li>
+<li> Identi.ca</li>
+<li> Jeqq</li>
+<li> Last FM</li>
+<li>LibraryThing</li>
+<li> Linked In</li>
+<li> My Space</li>
+<li> Orkut</li>
+<li> Picasa Web Albums</li>
+<li> Plurk</li>
+<li> Pownce</li>
+<li>Qik</li>
+<li> Qype</li>
+<li> RedGage</li>
+<li> Sixent</li>
+<li>Songza</li>
+<li> Stumble Upon</li>
+<li> Technorati</li>
+<li> Twitter</li>
+<li> YouTube</li>
+<li> Xing</li>
+</ul>
+</div>
 
 
 The About Me Wordpress plugin is a sidebar widget that displays icon links to your profile pages on other social networking sites. You can see it in action here on the right hand side of my blog.

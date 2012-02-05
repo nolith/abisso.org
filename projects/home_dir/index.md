@@ -5,6 +5,7 @@ slug: home_dir
 status: publish
 title: home_dir
 wordpress_id: '81'
+group: projects
 ---
 
 This Radiant extension allow you to define /~user routes like apache userdir module.

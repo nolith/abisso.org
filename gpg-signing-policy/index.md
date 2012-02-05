@@ -5,6 +5,7 @@ slug: gpg-signing-policy
 status: publish
 title: GPG Signing policy
 wordpress_id: '179'
+group: pages
 ---
 {% include JB/setup %}
 

@@ -4,6 +4,9 @@
     {{ page.date | date_to_long_string }} 
     {% if page.location %}{{ page.location }}{% endif %}
   </p>
+  {% if page.picture %}
+  <img id="post-logo" src="{{ page.picture }}" />
+  {% endif %}
   {{ content }}
 </div>
 

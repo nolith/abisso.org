@@ -5,6 +5,7 @@ slug: la-notte-blu-della-ricerca
 status: publish
 title: La notte blu della ricerca
 wordpress_id: '227'
+picture: http://sites.google.com/site/nottebludellaricerca/_/rsrc/1266328461143/home/notteblu.jpg
 categories:
 - italiano
 - me
@@ -16,7 +17,6 @@ tags:
 - talk
 ---
 
-![Paul Klee - Notte blu](http://sites.google.com/site/nottebludellaricerca/_/rsrc/1266328461143/home/notteblu.jpg)
 Sabato 8 e domenica 9 maggio 2010 a Firenze si terrà "La notte blu della ricerca".
 
 Si tratta di un evento organizzato in seno a [La Notte Blu](http://www.notteblu.eu), un'occasione per festeggiare i 27 paesi dell'Unione Europea.

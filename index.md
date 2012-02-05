@@ -7,7 +7,10 @@ title: Abisso Dev.
 {% for post in site.posts limit:1 %}
   <h2 id="intro"><a href="{{ post.url }}">{{ post.title }}</a></h2>
   <div class="post">
-  {{ post.content }}
+    {% if post.picture %}
+    <img id="post-logo" src="{{ post.picture }}" />
+    {% endif %}
+  {{ post.content | truncatewords: 100 }}
 <!-- <div class="fb-like" data-href="http://mgpf.it/{{ post.url }}" data-send="true" data-width="640" data-show-faces="true" data-font="lucida grande"></div> -->
   <p class="signoff">
     &raquo; {{ post.date | date: "%d/%m/%Y" }} con tag:

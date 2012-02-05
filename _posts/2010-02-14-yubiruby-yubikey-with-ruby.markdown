@@ -5,6 +5,7 @@ slug: yubiruby-yubikey-with-ruby
 status: publish
 title: YubiRuby - Yubikey with Ruby
 wordpress_id: '186'
+picture: /assets/images/yubikeyring.png
 categories:
 - english
 - Progetti
@@ -17,7 +18,7 @@ tags:
 - yubikey
 ---
 
-![](/assets/images/yubikeyring.png)Some days ago, willing to learn how to extends ruby with C code, I wrote a wrapper for [yubico-c](http://code.google.com/p/yubico-c/) library.
+Some days ago, willing to learn how to extends ruby with C code, I wrote a wrapper for [yubico-c](http://code.google.com/p/yubico-c/) library.
 
 You can find the sourcecode of my work on [bitbucket](http://bitbucket.org/nolith/yubiruby/) and some installation instruction on [the gemmcutter page](http://gemcutter.org/gems/YubiRuby).
 
