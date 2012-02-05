@@ -1,0 +1,24 @@
+---
+date: '2009-10-29 12:06:52'
+layout: post
+slug: dr-nolith
+status: publish
+title: Dr. Nolith
+wordpress_id: '163'
+categories:
+- About Me
+- italiano
+- me
+- Progetti
+tags:
+- about me
+- ipv6
+- networking
+- nolith
+---
+
+Non vi preoccupate, sono vivo :)
+
+Ultimamente sono stato poco presente perché stavo portando avanti il mio lavoro di tesi. Adesso che ho finito cercherò di essere più presente e di continuare a portare avanti [about-me](/projects/about-me).
+
+Per il momento segnalo che sto preparando una [lezione introduttiva su IPv6](http://code.l0g.in/intro_ipv6) che si terrà durante il corso di "[Gestione e Sicurezza di Reti di Telecomunicazioni](http://lart.det.unifi.it/didattica/corsi/gestione-reti-di-telecomunicazioni/)" dell'Università di Firenze.

@@ -1,0 +1,104 @@
+---
+date: '2009-05-31 19:23:06'
+layout: post
+slug: new-gpg-key
+status: publish
+title: New GPG key
+wordpress_id: '115'
+categories:
+- english
+- me
+tags:
+- gpg
+- linkedin
+- nolith
+- openpgp
+- pgp
+---
+
+Today I changed my gpg key, <a href="http://alessiocaiazza.info/key-transition-2009-05-31.txt">here</a> you can find a declaration and <a href="http://alessiocaiazza.info/nolith.gpg">here the new key</a>.
+
+<pre>
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512,SHA1
+
+Sun, 31 May 2009 
+
+For a number of reasons, i've recently set up a new OpenPGP key, and
+will be transitioning away from my old one.
+
+The old key will continue to be valid for some time, but i prefer all
+future correspondence to come to the new one.  I would also like this
+new key to be re-integrated into the web of trust.  This message is
+signed by both keys to certify the transition.
+
+the old key was:
+
+pub   1024D/9F04ED5E 2004-01-15 [expires: 2010-02-21]
+      Key fingerprint = B79A 36D6 A269 F302 3D49 8678 34F2 527D 9F04 ED5E
+
+And the new key is:
+
+pub   4096R/440C5437 2009-05-31
+      Key fingerprint = 87C3 BF5F 034A 6801 338A 7963 4C1E 7C65 440C 5437
+
+To fetch the full key (including a photo uid, which is commonly
+stripped by public keyservers), you can get it with:
+
+  wget -q -O- http://alessiocaiazza.info/nolith.gpg | gpg --import -
+
+Or, to fetch my new key from a public key server, you can simply do:
+
+  gpg --keyserver http-keys.gnupg.net --recv-key 440C5437
+
+If you already know my old key, you can now verify that the new key is
+signed by the old one:
+
+  gpg --check-sigs 440C5437
+
+If you don't already know my old key, or you just want to be double
+extra paranoid, you can check the fingerprint against the one above:
+
+  gpg --fingerprint 440C5437
+
+If you are satisfied that you've got the right key, and the UIDs match
+what you expect, I'd appreciate it if you would sign my key:
+
+  gpg --sign-key 440C5437
+
+Lastly, if you could upload these signatures, i would appreciate it.
+You can either send me an e-mail with the new signatures (if you have
+a functional MTA on your system):
+
+  gpg --armor --export 440C5437 | mail -s 'OpenPGP Signatures' nolith@abisso.org
+
+Or you can just upload the signatures to a public keyserver directly:
+
+  gpg --keyserver http-keys.gnupg.net --send-key 440C5437
+
+Please let me know if there is any trouble, and sorry for the
+inconvenience.
+
+Regards,
+
+	--nolith
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iQIcBAEBCgAGBQJKIrouAAoJEEwefGVEDFQ3G0kP/2VVV6nOZyGq37S3vYtd7Aiy
+koYGhYmZiKycA56PM+EDW46iGGRGFS1eBRn+aB0yDKIxi4r0NJ4g+j8K1ADfULNk
+LG1W8eH0KVPtxR8PzW2wkSfMmwz0P4dR/ZGvtCLKvUBNeZvc72PH7O3IcoAlbK9T
+scTPGkIvDJPfdYBPSJp7yUdPPFOzUKzGWehin8Jep+78QFWH5+9aAkRzlxJaC/OY
+Q9E/3Oz9fB/xuwtWqRnYHv9zadGpPFqorskhkqilBidsmBaGm+kxg7Y9TRGPw3Jd
+zLk+Cg3UFO1+qPTSS70axJ74AAwwiBvh5jX699mbXNabhTCU/cKi9Q3GdJayYP5b
+9/TneMXfNpsjYaETGQ+ue1MsZW0UX9fFQ5t8ZxGFWA7sIQ2+wsuZlW1v+vWWdeFn
+WMW8/tpuDNZ3/1ggmqkZZvXfNxpO8rfUhhpc1uUvwLSRp+Ao0owHDVeOLXVu2tvq
+6oAdfT92fveA38xbBgej0PctWOcEe6cRST9fhilXGR/vnqa/WECmw6+kiY52DyLR
+8yIY/YJL0YLKVxYwSwuEbMDYat0xkimugSEPWDiTwxMmf0lUxeN/d2ko5NdAyTku
+uEW5TE1HSBqpexBqaQ1wRctYc0v3s9Nf2AVIITf76YDyNjTSFlPZuryNIKLHsD6Y
+IaschVs1gJnzPSzTA1VviEYEARECAAYFAkoiui4ACgkQNPJSfZ8E7V5KSwCfcnYw
+AEey1qw63XrFQ8aNbTFqQJUAniK6mB/r5zvPBJw0doUinBYQZsTf
+=2/N1
+-----END PGP SIGNATURE-----
+</pre>

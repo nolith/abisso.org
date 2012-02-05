@@ -1,0 +1,18 @@
+---
+date: '2009-06-01 23:51:41'
+layout: post
+slug: about-me-103
+status: publish
+title: About Me 1.0.3
+wordpress_id: '120'
+categories:
+- About Me
+- english
+tags:
+- about me
+- linkedin
+---
+
+[About Me](http://abisso.org/projects/about-meabout-me/) 1.0.3 released.
+
+Added DIsqus support.
