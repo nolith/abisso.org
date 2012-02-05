@@ -17,7 +17,7 @@ tags:
 - sinatra
 ---
 
-![redirector logo](http://abisso.org/wp-content/uploads/2009/06/redirector.png)Oggi mi son imbattuto in un problema che ho risolto grazie a sinatra ed heroku.
+![redirector logo](/assets/images/redirector.png)Oggi mi son imbattuto in un problema che ho risolto grazie a sinatra ed heroku.
 
 Nei giorni scorsi avevo deciso di usare il domino _bb.alessiocaiazza.info_ come mia pagina personale su [bitbucket](http://bitbucket.org), solo che poi ho comprato il dominio _l0g.in_ e avrei preferito usare [code.l0g.in](http://code.l0g.in).
 

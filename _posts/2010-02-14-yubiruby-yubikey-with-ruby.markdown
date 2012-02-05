@@ -17,7 +17,7 @@ tags:
 - yubikey
 ---
 
-![](http://abisso.org/wp-content/uploads/2010/02/Schermata-2010-02-14-a-16.57.12.png)Some days ago, willing to learn how to extends ruby with C code, I wrote a wrapper for [yubico-c](http://code.google.com/p/yubico-c/) library.
+![](/assets/images/yubikeyring.png)Some days ago, willing to learn how to extends ruby with C code, I wrote a wrapper for [yubico-c](http://code.google.com/p/yubico-c/) library.
 
 You can find the sourcecode of my work on [bitbucket](http://bitbucket.org/nolith/yubiruby/) and some installation instruction on [the gemmcutter page](http://gemcutter.org/gems/YubiRuby).
 
