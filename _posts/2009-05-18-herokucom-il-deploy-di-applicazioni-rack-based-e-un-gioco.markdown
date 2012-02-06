@@ -38,11 +38,11 @@ Vediamo come funziona.
 
 
     
-    
-    	$ sudo gem install heroku
-    	$ sudo gem install sintra 
-    	$ sudo gem install thin
-    
+{% highlight bash %} 
+$ sudo gem install heroku
+$ sudo gem install sintra 
+$ sudo gem install thin
+{% endhighlight %} 
 
 
 
@@ -62,45 +62,46 @@ Creiamo il file hasher.rb dentro la cartella hasher.
 
 
     
-    
-    	require 'rubygems'
-    	require 'sinatra'
-    	require 'digest/md5'
-    
-    	get '/' do
-    	  erb :home
-    	end
-    
-    	post '/md5' do
-    	  unless params[:str].nil?
-    	    "<code>MD5(#{params[:str]}) -> #{Digest::MD5.hexdigest(params[:str])}</code>"
-    	  else
-    	    redirect '/'
-    	  end
-    	end
-    
-    	# Accettiamo solo richieste in POST
-    	get '/md5' do
-    	  redirect '/'
-    	end
-    
-    	use_in_file_templates!
-    
-    	__END__
-    
-    	@@ home
-    
-    	<p>
-    	Questa è una semplice webapp (esagerato!) per spiegare come funziona 
-    	<a href="http://heroku.com">Heroku</a>.<br></br>
-    	Puoi trovare l'articolo relativo nel mio 
-    	<a href="http://bit.ly/nkw0V" rel="me">blog</a>.
-    	</p>
-    
-    	<form action="/md5" accept-charset="utf-8" method="post">
-    	  <input type="text" name="str" value="Write here..." id="str"></input>
-    	  <input type="submit"></input>
-    	</form>
+{% highlight ruby %}    
+require 'rubygems'
+require 'sinatra'
+require 'digest/md5'
+
+get '/' do
+  erb :home
+end
+
+post '/md5' do
+  unless params[:str].nil?
+    "<code>MD5(#{params[:str]}) -> #{Digest::MD5.hexdigest(params[:str])}</code>"
+  else
+    redirect '/'
+  end
+end
+
+# Accettiamo solo richieste in POST
+get '/md5' do
+  redirect '/'
+end
+
+use_in_file_templates!
+
+__END__
+
+@@ home
+
+<p>
+Questa è una semplice webapp (esagerato!) per spiegare come funziona 
+<a href="http://heroku.com">Heroku</a>.<br></br>
+Puoi trovare l'articolo relativo nel mio 
+<a href="http://bit.ly/nkw0V" rel="me">blog</a>.
+</p>
+
+<form action="/md5" accept-charset="utf-8" method="post">
+  <input type="text" name="str" value="Write here..." id="str"></input>
+  <input type="submit"></input>
+</form>
+{% endhighlight %}
     
     
 
@@ -110,11 +111,11 @@ Per il deploy con rack è necessario creare anche il file config.ru
 
 
     
-    
-    #rack config file
-    require 'hasher'
-    run Sinatra::Application
-    
+{% highlight ruby %}
+#rack config file
+require 'hasher'
+run Sinatra::Application
+{% endhighlight %} 
 
 
 
@@ -128,51 +129,51 @@ Ora giunge il momento di mandare online la nostra applicazione
 
 
     
-    
-    #creaiamo il repository git nella cartella corrente
-    $ git init
-    Initialized empty Git repository in /Users/nolith/Documents/Projects/hasher/.git/
-    
-    #aggiungiamo tutti i file nella cartella al controllo di versione
-    $ git add .
-    
-    #eseguiamo il commit dei file
-    $ git commit -m 'Import iniziale: hash md5'
-    [master (root-commit)]: created 21b62e4: "Import iniziale: hash md5"
-     2 files changed, 41 insertions(+), 0 deletions(-)
-     create mode 100644 config.ru
-     create mode 100644 hasher.rb
-    
-    #creiamo una nuova applicazione su heroku
-    # sarà possibile rinominarla in seguito
-    $ heroku create
-    Enter your Heroku credentials.
-    Email: utente@server.it
-    Password:
-    Uploading ssh public key
-    Created http://growing-summer-43.heroku.com/ | git@heroku.com:growing-summer-43.git
-    Git remote heroku added
-    
-    #eseguiamo l'upload dell'applicazione
-    $ git push heroku master
-    Warning: Permanently added the RSA host key for IP address '75.101.145.87' to the list of known hosts.
-    Counting objects: 4, done.
-    Compressing objects: 100% (4/4), done.
-    Writing objects: 100% (4/4), 784 bytes, done.
-    Total 4 (delta 0), reused 0 (delta 0)
-    
-    -----> Heroku receiving push
-    -----> Rack app detected
-           Compiled slug size is 004K
-    -----> Launching..... done
-           App deployed to Heroku
-    
-    To git@heroku.com:growing-summer-43.git
-     * [new branch]      master -> master
-    
-    #Proviamo la nostra applicazione
-    $heroku open
-    
+{% highlight bash %}    
+#creiamo il repository git nella cartella corrente
+$ git init
+Initialized empty Git repository in /Users/nolith/Documents/Projects/hasher/.git/
+
+#aggiungiamo tutti i file nella cartella al controllo di versione
+$ git add .
+
+#eseguiamo il commit dei file
+$ git commit -m 'Import iniziale: hash md5'
+[master (root-commit)]: created 21b62e4: "Import iniziale: hash md5"
+ 2 files changed, 41 insertions(+), 0 deletions(-)
+ create mode 100644 config.ru
+ create mode 100644 hasher.rb
+
+#creiamo una nuova applicazione su heroku
+# sarà possibile rinominarla in seguito
+$ heroku create
+Enter your Heroku credentials.
+Email: utente@server.it
+Password:
+Uploading ssh public key
+Created http://growing-summer-43.heroku.com/ | git@heroku.com:growing-summer-43.git
+Git remote heroku added
+
+#eseguiamo l'upload dell'applicazione
+$ git push heroku master
+Warning: Permanently added the RSA host key for IP address '75.101.145.87' to the list of known hosts.
+Counting objects: 4, done.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 784 bytes, done.
+Total 4 (delta 0), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rack app detected
+       Compiled slug size is 004K
+-----> Launching..... done
+       App deployed to Heroku
+
+To git@heroku.com:growing-summer-43.git
+ * [new branch]      master -> master
+
+#Proviamo la nostra applicazione
+$heroku open
+{% endhighlight %}    
 
 
 

@@ -29,27 +29,26 @@ $ gem install YubiRuby
 you can try it with the following code
 
 
-    
-    
-    require 'rubygems'
-    require 'YubiRuby'
-    
-    key = "6df89690b5f51bd9ac912c5004781e86" #use your AES key
-    y = YubiRuby::Yubikey.new(key);
-    puts y.key
-    otp = gets().strip
-    puts y.parse(otp)
-    puts "Ouput: #{y}"
-    puts "uid: #{y.uid}"
-    puts "counter: #{y.counter}"
-    puts "capslock: #{y.triggered_by_capslock?}"
-    puts "timestamp low/high: #{y.timestamp_low}/#{y.timestamp_high}"
-    puts "session: #{y.session}"
-    puts "random: #{y.random}"
-    puts "crc: #{y.crc}"
-    puts "crc residue: #{y.crc_residue}"
-    puts "crc residue ok?: #{y.crc?} (#{y.crc_residue} == #{YubiRuby::Yubikey::CRC_OK_RESIDUE})"
-    
+{% highlight ruby %} 
+require 'rubygems'
+require 'YubiRuby'
+
+key = "6df89690b5f51bd9ac912c5004781e86" #use your AES key
+y = YubiRuby::Yubikey.new(key);
+puts y.key
+otp = gets().strip
+puts y.parse(otp)
+puts "Ouput: #{y}"
+puts "uid: #{y.uid}"
+puts "counter: #{y.counter}"
+puts "capslock: #{y.triggered_by_capslock?}"
+puts "timestamp low/high: #{y.timestamp_low}/#{y.timestamp_high}"
+puts "session: #{y.session}"
+puts "random: #{y.random}"
+puts "crc: #{y.crc}"
+puts "crc residue: #{y.crc_residue}"
+puts "crc residue ok?: #{y.crc?} (#{y.crc_residue} == #{YubiRuby::Yubikey::CRC_OK_RESIDUE})"
+{% endhighlight %}
 
 
 

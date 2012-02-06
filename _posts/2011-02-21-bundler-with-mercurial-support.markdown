@@ -60,10 +60,10 @@ Now you can with [this](https://github.com/nolith/bundler/zipball/mercurial_v1.0
 
 If this is not enough for you, I've also a patch set for loading gems directly from mercurial repos. This [patched bundler v1.1pre.1](https://github.com/nolith/bundler/zipball/mercurial) will make you happy.
 
-    
-    #Gemfile
-    gem 'eusplazio', :hg => 'http://bitbucket.org/nolith/eusplazio', :tag => 'v0.0.2'
-
+{% highlight ruby %}    
+#Gemfile
+gem 'eusplazio', :hg => 'http://bitbucket.org/nolith/eusplazio', :tag => 'v0.0.2'
+{% endhighlight %}
 
 Happy conding
 

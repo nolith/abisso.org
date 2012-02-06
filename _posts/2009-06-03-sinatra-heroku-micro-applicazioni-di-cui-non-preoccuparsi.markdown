@@ -26,25 +26,25 @@ Fin qui nulla di male, ma come fare con tutti i link che avevo disseminato in gi
 
 Mi è venuto in mente che con sinatra è possibile catturare le url con delle regexp...quindi...
 
+{% highlight ruby %}    
+#
+# redirector
+#
+# (c) 2009 - Alessio Caiazza 
     
-    #
-    # redirector
-    #
-    # (c) 2009 - Alessio Caiazza 
+require 'rubygems'
+require 'sinatra'
     
-    require 'rubygems'
-    require 'sinatra'
+REDIRECT_TO='http://l0g.in'
     
-    REDIRECT_TO='http://l0g.in'
+get '/' do
+    redirect REDIRECT_TO
+end
     
-    get '/' do
-    	redirect REDIRECT_TO
-    end
-    
-    get '/*' do
-    	redirect "#{REDIRECT_TO}/#{params[:splat][0]}"
-    end
-
+get '/*' do
+    redirect "#{REDIRECT_TO}/#{params[:splat][0]}"
+end
+{% endhighlight %}
 
 e poi deploy su heroku e custom domain service .....**fatto!**
 
