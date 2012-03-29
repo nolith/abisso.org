@@ -18,5 +18,5 @@ Questa versione del sito è un work-in-progress della migrazione wordpress -> je
   {% endfor %}
 </ul> 
 
-
+[![Nala]({{BASE_PATH}}/assets/images/nala_icon.jpg)]({{ BASE_PATH }}nala.html)
 
