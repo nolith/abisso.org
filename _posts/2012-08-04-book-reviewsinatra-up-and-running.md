@@ -3,6 +3,7 @@ layout: post
 title: "Book review:\"Sinatra: Up and Running\""
 slug: review-sinatra-up-and-running
 status: publish
+picture: /assets/images/sinatra_up_and_running.gif
 category:
 - english
 - ruby
@@ -28,6 +29,8 @@ You'll learn how to develop and use modular applications, building the theoretic
 
 Not even a sentence is redundant in this excellent manual, surely it is a reference book to keep on hand.
 
+[O'Reilly Shop](http://shop.oreilly.com/product/0636920019664.do)
+
 
 ### <a id="italian">Italian version</a>
 
@@ -46,5 +49,7 @@ Per sviluppatori esperti che vogliono approfondire il funzionamento di sinatra e
 Vengono trattate le applicazioni modulari, gettando le basi teoriche per il riuso delle applicazioni; viene spiegato molto bene come funziona RACK e come integrare web-app differenti (Rails, Sinatra ma anche semplici applicazioni fatte secondo le API di RACK).
 
 Neanche una frase è superflua in questo ottimo manuale, sicuramente si tratta di un testo di riferimento da tenere a portata di mano.
+
+[O'Reilly Shop](http://shop.oreilly.com/product/0636920019664.do)
 
 
