@@ -57,6 +57,7 @@ group: projects
 </ul>
 </div>
 
+**I'm sorry but this plugin is no longer supported by me. If you want to take the ownership of this project please send me a message.**
 
 The About Me Wordpress plugin is a sidebar widget that displays icon links to your profile pages on other social networking sites. You can see it in action here on the right hand side of my blog.
 
